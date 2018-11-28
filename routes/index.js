@@ -4,9 +4,10 @@ const router = express.Router();
 // Do work here
 router.get('/', (req, res) => {
   // res.send('Hey! It works!');
-  res.render('hello', {
+  res.render('hello-again', {
     name: 'Sean',
-    dog: req.query.dog
+    dog: req.query.dog,
+    title: 'I Love Food'
   })
 });
 
