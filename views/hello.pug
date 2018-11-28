@@ -1,11 +1,14 @@
-div
+.wrapper
+  // declare JS variables inline with PUG!
+  - const upDog = dog.toUpperCase();
   p#custom0 Hello!
   span.small#custom1 Dog: 
   img.dog(src="/dog.jpg" alt="dog")
 
   // use #{varName} for string interpolation
   // use ${varName} es6 template lits for attrs
-  p my name is #{name} and my dogs name is #{dog}
+  // use javascript on variable interpolation
+  p my name is #{name} and my dogs name is #{dog.toUpperCase()}
 
 h2 Hello
   em How Are You!?
